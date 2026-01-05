@@ -23,3 +23,30 @@ docker compose up -d
 docker compose ps
 ```
 
+## Access
+
+Prometheus: http://<VPS_IP>:9090
+
+Grafana: http://<VPS_IP>:3000 (default: admin / admin)
+
+Node Exporter: http://<VPS_IP>:9100/metrics
+
+Prometheus targets
+
+Check Status > Targets and ensure both targets are UP.
+
+## Alert rules
+
+Rules live under alert-rules/ and are loaded by Prometheus:
+
+InstanceDown: when up == 0 for 1m
+
+HighCPU: CPU usage > 85% for 2m
+
+## Notes (production tips)
+
+Do not keep admin password in plain env for production.
+
+Consider putting Grafana behind a reverse proxy + HTTPS.
+
+Add Alertmanager for routing alerts to Slack/Telegram.
