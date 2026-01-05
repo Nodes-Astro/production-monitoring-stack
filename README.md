@@ -53,3 +53,14 @@ Add Alertmanager for routing alerts to Slack/Telegram.
 
 <img width="1889" height="886" alt="image" src="https://github.com/user-attachments/assets/89275b21-e3c8-41da-b374-e2f0607b0edd" />
 
+## Why this project?
+This repository demonstrates a production-style approach to infrastructure monitoring.
+Rather than focusing on tooling installation only, it emphasizes observability concepts,
+metric-driven visibility, and alert-based awareness.
+
+## Possible improvements
+- Add Alertmanager and route alerts to Slack or Telegram
+- Put Grafana behind a reverse proxy with HTTPS
+- Add application-level metrics
+- Introduce retention and resource limits
+
