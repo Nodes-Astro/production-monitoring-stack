@@ -50,3 +50,6 @@ Do not keep admin password in plain env for production.
 Consider putting Grafana behind a reverse proxy + HTTPS.
 
 Add Alertmanager for routing alerts to Slack/Telegram.
+
+<img width="1889" height="886" alt="image" src="https://github.com/user-attachments/assets/89275b21-e3c8-41da-b374-e2f0607b0edd" />
+
